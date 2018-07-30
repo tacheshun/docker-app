@@ -1,7 +1,24 @@
 # docker-app
 An example of Docker with Symfony, nginx, and MySQL
 
-## Instructions for use
+## Instructions for use on Windows
+
+``` language-shell
+git clone https://github.com/tacheshun/docker-app.git
+cd docker-app
+
+composer install --no-scripts
+
+docker-compose build --pull --no-cache 
+docker-compose -f docker-compose.yml up -d --remove-orphans
+```
+
+### when you finish, don't forget to:
+``` language-shell
+docker-compose down 
+```
+
+## Instructions for use on Mac
 
 ``` language-shell
 git clone https://github.com/tacheshun/docker-app.git
@@ -29,20 +46,3 @@ docker-compose exec php /bin/bash
 From here, you should be able to `composer install` ...
 
 You will only need to do the permissions changes once. After this / subsequent development sessions, just run `make dev`.
-
-## On Windows
-
-``` language-shell
-git clone https://github.com/tacheshun/docker-app.git
-cd docker-app
-
-composer install --no-scripts
-
-docker-compose build --pull --no-cache 
-docker-compose -f docker-compose.yml up -d --remove-orphans
-```
-
-### when you finish, don't forget to:
-``` language-shell
-docker-compose down 
-```
