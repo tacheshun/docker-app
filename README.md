@@ -43,6 +43,6 @@ make dev
 # get a terminal session open to the php container
 docker-compose exec php /bin/bash
 ```
-From here, you should be able to `composer install` ...
+From here, you should be able to `composer install --no-scripts` ...
 
 You will only need to do the permissions changes once. After this / subsequent development sessions, just run `make dev`.
