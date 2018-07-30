@@ -1,0 +1,2 @@
+- docker build --build-arg WORK_DIR=/var/www/dev/ -t docker.io/tacheshun/symfony.dev .
+- docker push docker.io/tacheshun/symfony.dev
