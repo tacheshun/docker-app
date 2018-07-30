@@ -40,6 +40,9 @@ composer install --no-scripts
 
 docker-compose build --pull --no-cache 
 docker-compose -f docker-compose.yml up -d --remove-orphans
+```
 
-#when you finish, don't forget to:
+### when you finish, don't forget to:
+``` language-shell
 docker-compose down 
+```
